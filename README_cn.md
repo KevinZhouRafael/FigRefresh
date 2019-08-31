@@ -32,7 +32,7 @@ import FigRefresh
 ## 设计
 
 
-![](img_cn.png)
+![](img_cn.jpeg)
 
 
 RefreshComponent有一个titleLabel成员，用来显示不同状态的文本。

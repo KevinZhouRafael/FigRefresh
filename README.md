@@ -31,7 +31,7 @@ look up FigRefreshDemo project in sources.
 ## Design
 
 
-![](img_en.png)
+![](img_en.jpeg)
 
 
 RefreshComponent have a titleLabel property，it use show different text on various states.
