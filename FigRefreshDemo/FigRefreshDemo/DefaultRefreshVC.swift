@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ZKRefresh
+import FigRefresh
 
 class DefaultRefreshVC: UIViewController {
 
@@ -27,22 +27,22 @@ class DefaultRefreshVC: UIViewController {
         //默认 header 和 footer
         //Set Default Header and Footer
         
-        ZKRefreshSetDefaultHeader(RefreshImagesHeader.self)
-        ZKRefreshSetDefaultFooter(RefreshFooter.self)
+        FigRefreshSetDefaultHeader(RefreshImagesHeader.self)
+        FigRefreshSetDefaultFooter(RefreshFooter.self)
         
-        scrollView.zk_header {
+        scrollView.fig_header {
             DispatchQueue.global().async {  [weak self] in
                 sleep(3)
                 DispatchQueue.main.async {
-                    self?.scrollView.zk_header?.endRefreshing()
+                    self?.scrollView.fig_header?.endRefreshing()
                 }
             }
         }
-        scrollView.zk_footer { [weak self] in
+        scrollView.fig_footer { [weak self] in
             DispatchQueue.global().async {
                 sleep(3)
                 DispatchQueue.main.async {
-                    self?.scrollView.zk_footer?.endRefreshing()
+                    self?.scrollView.fig_footer?.endRefreshing()
                 }
             }
         }

@@ -1,12 +1,12 @@
-# ZKRefresh
+# FigRefresh
 
-[![Version](https://img.shields.io/cocoapods/v/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
+[![Version](https://img.shields.io/cocoapods/v/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
 <!--[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)-->
-[![License](https://img.shields.io/cocoapods/l/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
-[![Platform](https://img.shields.io/cocoapods/p/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
+[![License](https://img.shields.io/cocoapods/l/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
+[![Platform](https://img.shields.io/cocoapods/p/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
 
 
-ZKRefresh 是一个Swift刷新框架。api与[MJRefresh](https://github.com/CoderMJLee/MJRefresh)类似，但代码更加精简，扩展更加容易。
+FigRefresh 是一个Swift刷新框架。api与[MJRefresh](https://github.com/CoderMJLee/MJRefresh)类似，但代码更加精简，扩展更加容易。
 
 [**English Version**](README.md)
 
@@ -15,19 +15,19 @@ ZKRefresh 是一个Swift刷新框架。api与[MJRefresh](https://github.com/Code
 ## 用法
 
 ```swift
-import ZKRefresh
+import FigRefresh
 
- scrollView.zk_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
+ scrollView.fig_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
      DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
  })
 
 ```
-参看源码中的ZKRefreshDemo工程。
+参看源码中的FigRefreshDemo工程。
 
 ## 设计
 
@@ -179,29 +179,29 @@ open class RefreshFooter:RefreshFooterControl{
 
 ```Swift
         
-ZKRefreshSetDefaultHeader(MyCustomRefreshHeader.self)
-ZKRefreshSetDefaultFooter(MyCustomRefreshFooter.self)
+FigRefreshSetDefaultHeader(MyCustomRefreshHeader.self)
+FigRefreshSetDefaultFooter(MyCustomRefreshFooter.self)
         
 ```
  
- 直接通过 zk_header 和 zk_footer创建使用，
+ 直接通过 fig_header 和 fig_footer创建使用，
  不再需要显示创建Header和Footer对象了。
  
 ```Swift
 
-scrollView.zk_header {
+scrollView.fig_header {
     DispatchQueue.global().async {  [weak self] in
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
 }
-scrollView.zk_footer { [weak self] in
+scrollView.fig_footer { [weak self] in
     DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_footer?.endRefreshing()
+            self?.scrollView.fig_footer?.endRefreshing()
         }
     }
 }
@@ -212,19 +212,19 @@ scrollView.zk_footer { [weak self] in
 
 ```Swift
 
-tableView.zk_footer?.setTitle("xxxx", for: .noMoreData) // 如果需要的话
-tableView.zk_footer?.endRefreshingWithNoMoreData()
+tableView.fig_footer?.setTitle("xxxx", for: .noMoreData) // 如果需要的话
+tableView.fig_footer?.endRefreshingWithNoMoreData()
 
 ```
 
 ### 4、使用自定义的，和全局header或footer不同的view.
 
 ```Swift
- scrollView.zk_header = MyCustom2Header(refreshingClosure: { [weak self] in
+ scrollView.fig_header = MyCustom2Header(refreshingClosure: { [weak self] in
      DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
  })
@@ -243,7 +243,7 @@ tableView.zk_footer?.endRefreshingWithNoMoreData()
 再Podfile文件中添加:
 
 ```ruby
-pod "ZKRefresh"
+pod "FigRefresh"
 ```
 
 ## 作者
@@ -257,4 +257,4 @@ Kevin Zhou
 
 ## License
 
-ZKRefresh is available under the MIT license. See the LICENSE file for more info.
+FigRefresh is available under the MIT license. See the LICENSE file for more info.

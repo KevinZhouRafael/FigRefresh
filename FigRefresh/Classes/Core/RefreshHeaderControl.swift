@@ -129,7 +129,7 @@ open class RefreshHeaderControl:RefreshComponent{
         self.endRefreshingSelector = nil
         endRefreshingExecute()
         let scrollView = superview as! UIScrollView
-        if let footer = scrollView.zk_footer{
+        if let footer = scrollView.fig_footer{
             footer.resetNoMoreData()
         }
     }

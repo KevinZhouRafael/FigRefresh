@@ -1,11 +1,11 @@
-# ZKRefresh
+# FigRefresh
 
-[![Version](https://img.shields.io/cocoapods/v/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
-[![License](https://img.shields.io/cocoapods/l/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
-[![Platform](https://img.shields.io/cocoapods/p/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
+[![Version](https://img.shields.io/cocoapods/v/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
+[![License](https://img.shields.io/cocoapods/l/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
+[![Platform](https://img.shields.io/cocoapods/p/FigRefresh.svg?style=flat)](http://cocoapods.org/pods/FigRefresh)
 
 
-ZKRefresh is a Swift refresh framework. It's api looks like [MJRefresh](https://github.com/CoderMJLee/MJRefresh). ZKRefresh is simple and extensibility.
+FigRefresh is a Swift refresh framework. It's api looks like [MJRefresh](https://github.com/CoderMJLee/MJRefresh). FigRefresh is simple and extensibility.
 
 [**中文版**](README_cn.md)
 
@@ -14,19 +14,19 @@ ZKRefresh is a Swift refresh framework. It's api looks like [MJRefresh](https://
 ## Usage
 
 ```swift
-import ZKRefresh
+import FigRefresh
 
- scrollView.zk_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
+ scrollView.fig_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
      DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
  })
 
 ```
-look up ZKRefreshDemo project in sources. 
+look up FigRefreshDemo project in sources. 
 
 ## Design
 
@@ -117,7 +117,7 @@ public class MyCustomHeader:RefreshHeader{
 
 ## States
 
-ZKRefresh have 6 states:
+FigRefresh have 6 states:
 
 - idle: normal idel
 - pullingInRect: pulling and component not displays fully
@@ -179,29 +179,29 @@ Set onec Header and Footer.
 
 ```Swift
         
-ZKRefreshSetDefaultHeader(MyCustomRefreshHeader.self)
-ZKRefreshSetDefaultFooter(MyCustomRefreshFooter.self)
+FigRefreshSetDefaultHeader(MyCustomRefreshHeader.self)
+FigRefreshSetDefaultFooter(MyCustomRefreshFooter.self)
         
 ```
  
- call header use zk_header.
- call footer use zk_footer.
+ call header use fig_header.
+ call footer use fig_footer.
  
 ```Swift
 
-scrollView.zk_header {
+scrollView.fig_header {
     DispatchQueue.global().async {  [weak self] in
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
 }
-scrollView.zk_footer { [weak self] in
+scrollView.fig_footer { [weak self] in
     DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_footer?.endRefreshing()
+            self?.scrollView.fig_footer?.endRefreshing()
         }
     }
 }
@@ -212,19 +212,19 @@ scrollView.zk_footer { [weak self] in
 
 ```Swift
 
-tableView.zk_footer?.setTitle("xxxx", for: .noMoreData) // If needed.
-tableView.zk_footer?.endRefreshingWithNoMoreData()
+tableView.fig_footer?.setTitle("xxxx", for: .noMoreData) // If needed.
+tableView.fig_footer?.endRefreshingWithNoMoreData()
 
 ```
 
 ### 4、use custom header or footer diffent with globles.
 
 ```Swift
- scrollView.zk_header = MyCustom2Header(refreshingClosure: { [weak self] in
+ scrollView.fig_header = MyCustom2Header(refreshingClosure: { [weak self] in
      DispatchQueue.global().async {
         sleep(3)
         DispatchQueue.main.async {
-            self?.scrollView.zk_header?.endRefreshing()
+            self?.scrollView.fig_header?.endRefreshing()
         }
     }
  })
@@ -243,7 +243,7 @@ tableView.zk_footer?.endRefreshingWithNoMoreData()
 Add the following line to your Podfile:
 
 ```ruby
-pod "ZKRefresh"
+pod "FigRefresh"
 ```
 
 ## Author
@@ -257,4 +257,4 @@ Kevin Zhou
 
 ## License
 
-ZKRefresh is available under the MIT license. See the LICENSE file for more info.
+FigRefresh is available under the MIT license. See the LICENSE file for more info.

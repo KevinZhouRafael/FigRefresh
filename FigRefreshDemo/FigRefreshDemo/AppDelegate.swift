@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ZKRefreshDemo
+//  FigRefreshDemo
 //
 //  Created by zhoukai on 2019/8/31.
 //  Copyright © 2019 wumingapie@gmail.com. All rights reserved.

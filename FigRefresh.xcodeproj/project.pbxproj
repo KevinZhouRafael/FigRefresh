@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5649FF97231A0023008E1904 /* ZKRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 5649FF95231A0023008E1904 /* ZKRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5649FF97231A0023008E1904 /* FigRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 5649FF95231A0023008E1904 /* FigRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5649FFC0231A024D008E1904 /* RefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFBC231A024D008E1904 /* RefreshHeader.swift */; };
 		5649FFC1231A024D008E1904 /* RefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFBD231A024D008E1904 /* RefreshComponent.swift */; };
 		5649FFC2231A024D008E1904 /* RefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFBE231A024D008E1904 /* RefreshFooter.swift */; };
 		5649FFC3231A024D008E1904 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFBF231A024D008E1904 /* UIScrollView+Refresh.swift */; };
 		5649FFCD231A0C9B008E1904 /* UIScrollView+RefreshConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFCA231A0C9B008E1904 /* UIScrollView+RefreshConvenience.swift */; };
 		5649FFD2231A0E47008E1904 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5649FFD1231A0E47008E1904 /* Media.xcassets */; };
-		5649FFD4231A0F24008E1904 /* ZKRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFD3231A0F24008E1904 /* ZKRefresh.swift */; };
+		5649FFD4231A0F24008E1904 /* FigRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFD3231A0F24008E1904 /* FigRefresh.swift */; };
 		5649FFD6231A2183008E1904 /* RefreshIndicatorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFD5231A2183008E1904 /* RefreshIndicatorHeader.swift */; };
 		5649FFD8231A219E008E1904 /* RefreshIndicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFD7231A219E008E1904 /* RefreshIndicatorFooter.swift */; };
 		5649FFDC231A2989008E1904 /* RefreshImagesHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649FFDB231A2989008E1904 /* RefreshImagesHeader.swift */; };
@@ -23,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5649FF92231A0023008E1904 /* ZKRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5649FF95231A0023008E1904 /* ZKRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKRefresh.h; sourceTree = "<group>"; };
+		5649FF92231A0023008E1904 /* FigRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FigRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5649FF95231A0023008E1904 /* FigRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigRefresh.h; sourceTree = "<group>"; };
 		5649FF96231A0023008E1904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5649FFBC231A024D008E1904 /* RefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeader.swift; sourceTree = "<group>"; };
 		5649FFBD231A024D008E1904 /* RefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshComponent.swift; sourceTree = "<group>"; };
@@ -32,7 +32,7 @@
 		5649FFBF231A024D008E1904 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
 		5649FFCA231A0C9B008E1904 /* UIScrollView+RefreshConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+RefreshConvenience.swift"; sourceTree = "<group>"; };
 		5649FFD1231A0E47008E1904 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		5649FFD3231A0F24008E1904 /* ZKRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKRefresh.swift; sourceTree = "<group>"; };
+		5649FFD3231A0F24008E1904 /* FigRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigRefresh.swift; sourceTree = "<group>"; };
 		5649FFD5231A2183008E1904 /* RefreshIndicatorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIndicatorHeader.swift; sourceTree = "<group>"; };
 		5649FFD7231A219E008E1904 /* RefreshIndicatorFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIndicatorFooter.swift; sourceTree = "<group>"; };
 		5649FFDB231A2989008E1904 /* RefreshImagesHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshImagesHeader.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		5649FF88231A0023008E1904 = {
 			isa = PBXGroup;
 			children = (
-				5649FF94231A0023008E1904 /* ZKRefresh */,
+				5649FF94231A0023008E1904 /* FigRefresh */,
 				5649FF93231A0023008E1904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,26 +62,26 @@
 		5649FF93231A0023008E1904 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5649FF92231A0023008E1904 /* ZKRefresh.framework */,
+				5649FF92231A0023008E1904 /* FigRefresh.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5649FF94231A0023008E1904 /* ZKRefresh */ = {
+		5649FF94231A0023008E1904 /* FigRefresh */ = {
 			isa = PBXGroup;
 			children = (
 				5649FFD0231A0E2A008E1904 /* Resources */,
 				5649FFBB231A0243008E1904 /* Classes */,
-				5649FF95231A0023008E1904 /* ZKRefresh.h */,
+				5649FF95231A0023008E1904 /* FigRefresh.h */,
 				5649FF96231A0023008E1904 /* Info.plist */,
 			);
-			path = ZKRefresh;
+			path = FigRefresh;
 			sourceTree = "<group>";
 		};
 		5649FFBB231A0243008E1904 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5649FFD3231A0F24008E1904 /* ZKRefresh.swift */,
+				5649FFD3231A0F24008E1904 /* FigRefresh.swift */,
 				5649FFBF231A024D008E1904 /* UIScrollView+Refresh.swift */,
 				5649FFCA231A0C9B008E1904 /* UIScrollView+RefreshConvenience.swift */,
 				5649FFCF231A0CBB008E1904 /* Core */,
@@ -127,16 +127,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5649FF97231A0023008E1904 /* ZKRefresh.h in Headers */,
+				5649FF97231A0023008E1904 /* FigRefresh.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5649FF91231A0023008E1904 /* ZKRefresh */ = {
+		5649FF91231A0023008E1904 /* FigRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5649FF9A231A0023008E1904 /* Build configuration list for PBXNativeTarget "ZKRefresh" */;
+			buildConfigurationList = 5649FF9A231A0023008E1904 /* Build configuration list for PBXNativeTarget "FigRefresh" */;
 			buildPhases = (
 				5649FF8D231A0023008E1904 /* Headers */,
 				5649FF8E231A0023008E1904 /* Sources */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = ZKRefresh;
+			name = FigRefresh;
 			productName = ZKRefresh;
-			productReference = 5649FF92231A0023008E1904 /* ZKRefresh.framework */;
+			productReference = 5649FF92231A0023008E1904 /* FigRefresh.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5649FF8C231A0023008E1904 /* Build configuration list for PBXProject "ZKRefresh" */;
+			buildConfigurationList = 5649FF8C231A0023008E1904 /* Build configuration list for PBXProject "FigRefresh" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5649FF91231A0023008E1904 /* ZKRefresh */,
+				5649FF91231A0023008E1904 /* FigRefresh */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +206,7 @@
 				5649FFC1231A024D008E1904 /* RefreshComponent.swift in Sources */,
 				5649FFCD231A0C9B008E1904 /* UIScrollView+RefreshConvenience.swift in Sources */,
 				5649FFD8231A219E008E1904 /* RefreshIndicatorFooter.swift in Sources */,
-				5649FFD4231A0F24008E1904 /* ZKRefresh.swift in Sources */,
+				5649FFD4231A0F24008E1904 /* FigRefresh.swift in Sources */,
 				5649FFDC231A2989008E1904 /* RefreshImagesHeader.swift in Sources */,
 				5649FFD6231A2183008E1904 /* RefreshIndicatorHeader.swift in Sources */,
 				5649FFC3231A024D008E1904 /* UIScrollView+Refresh.swift in Sources */,
@@ -349,14 +349,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZKRefresh/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FigRefresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeshereigns.ios.ZKRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeshereigns.ios.FigRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -375,14 +375,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZKRefresh/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FigRefresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeshereigns.ios.ZKRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeshereigns.ios.FigRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5649FF8C231A0023008E1904 /* Build configuration list for PBXProject "ZKRefresh" */ = {
+		5649FF8C231A0023008E1904 /* Build configuration list for PBXProject "FigRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5649FF98231A0023008E1904 /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5649FF9A231A0023008E1904 /* Build configuration list for PBXNativeTarget "ZKRefresh" */ = {
+		5649FF9A231A0023008E1904 /* Build configuration list for PBXNativeTarget "FigRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5649FF9B231A0023008E1904 /* Debug */,

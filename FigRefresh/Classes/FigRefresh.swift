@@ -1,6 +1,6 @@
 //
-//  ZKRefresh.swift
-//  ZKRefresh
+//  FigRefresh.swift
+//  FigRefresh
 //
 //  Created by zhoukai on 2019/8/31.
 //  Copyright © 2019 wumingapie@gmail.com. All rights reserved.
@@ -12,27 +12,27 @@ var Default_Header:RefreshHeader.Type = RefreshIndicatorHeader.self
 var Default_Footer:RefreshFooter.Type = RefreshIndicatorFooter.self
 var Default_Component_Height:CGFloat = 50.0
 
-public func ZKRefreshSetDefaultHeader(_ header:RefreshHeader.Type) {
+public func FigRefreshSetDefaultHeader(_ header:RefreshHeader.Type) {
     Default_Header = header
 }
 
-public func ZKRefreshGetDefaultHeader() -> RefreshHeader.Type{
+public func FigRefreshGetDefaultHeader() -> RefreshHeader.Type{
     return Default_Header
 }
 
-public func ZKRefreshSetDefaultFooter(_ footer:RefreshFooter.Type){
+public func FigRefreshSetDefaultFooter(_ footer:RefreshFooter.Type){
     Default_Footer = footer
 }
 
-public func ZKRefreshGetDefaultFooter() -> RefreshFooter.Type{
+public func FigRefreshGetDefaultFooter() -> RefreshFooter.Type{
     return Default_Footer
 }
 
-public func ZKRefreshSetDefaultComponentHeight(_ h:CGFloat){
+public func FigRefreshSetDefaultComponentHeight(_ h:CGFloat){
     Default_Component_Height = h
 }
 
-public func ZKRefreshGetDefaultComponentHeight() -> CGFloat{
+public func FigRefreshGetDefaultComponentHeight() -> CGFloat{
     return Default_Component_Height
 }
 
@@ -40,7 +40,7 @@ public func ZKRefreshGetDefaultComponentHeight() -> CGFloat{
 let bundle = Bundle(for: RefreshComponent.self)
 extension UIImage{
     convenience init?(named:String) {
-        let sourceBundlePath = bundle.path(forResource: "ZKRefreshResource", ofType: "bundle")
+        let sourceBundlePath = bundle.path(forResource: "FigRefreshResource", ofType: "bundle")
         let sourceBundle = Bundle.init(path: sourceBundlePath!)
         self.init(named: named, in: sourceBundle, compatibleWith: nil)
     }

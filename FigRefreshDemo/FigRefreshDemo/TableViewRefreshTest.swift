@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ZKRefresh
+import FigRefresh
 
 class TableViewRefreshTest: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -21,18 +21,18 @@ class TableViewRefreshTest: UIViewController,UITableViewDelegate,UITableViewData
         debugPrint("deinit-TableViewControllerRefreshTest")
     }
     @IBAction func enableRefresh(_ sender: Any) {
-        tableView.zk_header?.enableRefresh = true
-        tableView.zk_footer?.enableRefresh = true
+        tableView.fig_header?.enableRefresh = true
+        tableView.fig_footer?.enableRefresh = true
     }
     @IBAction func disableRefresh(_ sender: Any) {
-        tableView.zk_header?.enableRefresh = false
-        tableView.zk_footer?.enableRefresh = false
+        tableView.fig_header?.enableRefresh = false
+        tableView.fig_footer?.enableRefresh = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.zk_header = RefreshImagesHeader(refreshingClosure: { [weak self] in
+        tableView.fig_header = RefreshImagesHeader(refreshingClosure: { [weak self] in
             DispatchQueue.global().async {
                 self?.count = 12
                 sleep(3)
@@ -40,20 +40,20 @@ class TableViewRefreshTest: UIViewController,UITableViewDelegate,UITableViewData
                     
                     self?.tableView.reloadData()
 
-                    self?.tableView.zk_header?.endRefreshing()
-//                    self?.tableView.zk_footer?.resetNoMoreData()
+                    self?.tableView.fig_header?.endRefreshing()
+//                    self?.tableView.fig_footer?.resetNoMoreData()
                     
-//                    self?.tableView.zk_header?.enableRefresh = false
+//                    self?.tableView.fig_header?.enableRefresh = false
                     
-//                    self?.tableView.zk_header?.endRefreshingWithResetFooter()//底层自动调用footer的setNoMoreData()
+//                    self?.tableView.fig_header?.endRefreshingWithResetFooter()//底层自动调用footer的setNoMoreData()
                 }
             }
         })
 
-        tableView.zk_footer = RefreshIndicatorFooter(refreshingTarget: self, refreshingSelector: #selector(requestLoadMore))
+        tableView.fig_footer = RefreshIndicatorFooter(refreshingTarget: self, refreshingSelector: #selector(requestLoadMore))
         
-//        tableView.zk_footer?.setTitle("没有更多了", for: .noMoreData)
-//        tableView.zk_footer?.endRefreshingWithNoMoreData()
+//        tableView.fig_footer?.setTitle("没有更多了", for: .noMoreData)
+//        tableView.fig_footer?.endRefreshingWithNoMoreData()
     }
 
     @objc func requestLoadMore(){
@@ -76,13 +76,13 @@ class TableViewRefreshTest: UIViewController,UITableViewDelegate,UITableViewData
                 
                 if self?.hasMore ?? true{
                     //执行多次，会显示最后一次设置的
-//                    self?.tableView.zk_footer?.endRefreshingWithNoMoreData()
-//                    self?.tableView.zk_footer?.endRefreshing()
-                    self?.tableView.zk_footer?.endRefreshingWithNoMoreData()
-                    self?.tableView.zk_footer?.endRefreshing()
+//                    self?.tableView.fig_footer?.endRefreshingWithNoMoreData()
+//                    self?.tableView.fig_footer?.endRefreshing()
+                    self?.tableView.fig_footer?.endRefreshingWithNoMoreData()
+                    self?.tableView.fig_footer?.endRefreshing()
                 }else{
-                    self?.tableView.zk_footer?.endRefreshingWithNoMoreData()
-                    // self?.tableView.zk_footer?.enableRefresh = false
+                    self?.tableView.fig_footer?.endRefreshingWithNoMoreData()
+                    // self?.tableView.fig_footer?.enableRefresh = false
                 }
             }
         }

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5649FFA5231A0092008E1904"
-               BuildableName = "ZKRefreshDemo.app"
-               BlueprintName = "ZKRefreshDemo"
-               ReferencedContainer = "container:ZKRefreshDemo.xcodeproj">
+               BuildableName = "FigRefreshDemo.app"
+               BlueprintName = "FigRefreshDemo"
+               ReferencedContainer = "container:FigRefreshDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5649FFA5231A0092008E1904"
-            BuildableName = "ZKRefreshDemo.app"
-            BlueprintName = "ZKRefreshDemo"
-            ReferencedContainer = "container:ZKRefreshDemo.xcodeproj">
+            BuildableName = "FigRefreshDemo.app"
+            BlueprintName = "FigRefreshDemo"
+            ReferencedContainer = "container:FigRefreshDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5649FFA5231A0092008E1904"
-            BuildableName = "ZKRefreshDemo.app"
-            BlueprintName = "ZKRefreshDemo"
-            ReferencedContainer = "container:ZKRefreshDemo.xcodeproj">
+            BuildableName = "FigRefreshDemo.app"
+            BlueprintName = "FigRefreshDemo"
+            ReferencedContainer = "container:FigRefreshDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5649FFA5231A0092008E1904"
-            BuildableName = "ZKRefreshDemo.app"
-            BlueprintName = "ZKRefreshDemo"
-            ReferencedContainer = "container:ZKRefreshDemo.xcodeproj">
+            BuildableName = "FigRefreshDemo.app"
+            BlueprintName = "FigRefreshDemo"
+            ReferencedContainer = "container:FigRefreshDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

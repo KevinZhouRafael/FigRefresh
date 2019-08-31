@@ -1,15 +1,15 @@
-ZKRefreshDemo/Pods
-ZKRefreshDemo/Podfile.lock
-ZKRefreshDemo/ZKRefreshDemo.xcworkspace
-ZKRefreshDemo/build/
-ZKRefreshDemo/DerivedData/
+FigRefreshDemo/Pods
+FigRefreshDemo/Podfile.lock
+FigRefreshDemo/FigRefreshDemo.xcworkspace
+FigRefreshDemo/build/
+FigRefreshDemo/DerivedData/
 
-ZKRefresh.xcodeproj/project.xcworkspace/
-ZKRefreshDemo/ZKRefreshDemo.xcodeproj/project.xcworkspace/
+FigRefresh.xcodeproj/project.xcworkspace/
+FigRefreshDemo/FigRefreshDemo.xcodeproj/project.xcworkspace/
 
 Pods
 Podfile.lock
-ZKRefresh.xcworkspace
+FigRefresh.xcworkspace
 
 
 .DS_Store

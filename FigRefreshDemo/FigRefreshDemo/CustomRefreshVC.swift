@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ZKRefresh
+import FigRefresh
 
 class CustomeRefreshVC: UIViewController {
     
@@ -27,24 +27,24 @@ class CustomeRefreshVC: UIViewController {
          //One;
          // Designative header footer
          //指定 header 和 footer
-//         scrollView.zk_header = RefreshImagesHeader(refreshingClosure: { [weak self] in
-//         scrollView.zk_header = RefreshHeader(refreshingClosure: { [weak self] in
-         scrollView.zk_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
+//         scrollView.fig_header = RefreshImagesHeader(refreshingClosure: { [weak self] in
+//         scrollView.fig_header = RefreshHeader(refreshingClosure: { [weak self] in
+         scrollView.fig_header = RefreshIndicatorHeader(refreshingClosure: { [weak self] in
              DispatchQueue.global().async {
                 sleep(3)
                 DispatchQueue.main.async {
-                    self?.scrollView.zk_header?.endRefreshing()
+                    self?.scrollView.fig_header?.endRefreshing()
                 }
             }
          })
          
-//         scrollView.zk_footer = RefreshFooter(refreshingClosure: {
-         scrollView.zk_footer = RefreshIndicatorFooter(refreshingClosure: {
+//         scrollView.fig_footer = RefreshFooter(refreshingClosure: {
+         scrollView.fig_footer = RefreshIndicatorFooter(refreshingClosure: {
          [weak self] in
              DispatchQueue.global().async {
                 sleep(3)
                 DispatchQueue.main.async {
-                    self?.scrollView.zk_footer?.endRefreshing()
+                    self?.scrollView.fig_footer?.endRefreshing()
                 }
              }
          })

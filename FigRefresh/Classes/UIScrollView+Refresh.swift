@@ -10,18 +10,18 @@ import Foundation
 
 
 public protocol Refreshable:NSObjectProtocol {
-    var zk_header:RefreshHeader?{set get}
-    var zk_footer:RefreshFooter?{set get}
+    var fig_header:RefreshHeader?{set get}
+    var fig_footer:RefreshFooter?{set get}
     
 }
 
 private var REFRESHABLE_HEADER:String = "REFRESHABLE_HEADER"
 private var REFRESHABLE_FOOTER:String = "REFRESHABLE_FOOTER"
 extension Refreshable where Self:UIScrollView{
-    public var zk_header:RefreshHeader?{
+    public var fig_header:RefreshHeader?{
         set{
             if let  newHeader = newValue{
-                if let oldHeader = zk_header,oldHeader != newHeader{
+                if let oldHeader = fig_header,oldHeader != newHeader{
                     oldHeader.removeFromSuperview()
                 }
                 insertSubview(newHeader,at:0)
@@ -34,10 +34,10 @@ extension Refreshable where Self:UIScrollView{
         }
     }
     
-    public  var zk_footer:RefreshFooter?{
+    public  var fig_footer:RefreshFooter?{
         set{
             if let newFooter = newValue{
-                if let oldFooter = zk_footer,oldFooter != newFooter{
+                if let oldFooter = fig_footer,oldFooter != newFooter{
                     oldFooter.removeFromSuperview()
                 }
                 insertSubview(newFooter,at:0)

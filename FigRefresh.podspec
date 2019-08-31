@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint ZKRefresh.Swift.podspec' to ensure this is a
+# Be sure to run `pod lib lint FigRefresh.Swift.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZKRefresh'
-  s.version          = '1.0.0'
+  s.name             = 'FigRefresh'
+  s.version          = '1.1.0'
   s.summary          = 'An easy way to use pull-to-refresh for Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -21,19 +21,19 @@ Pod::Spec.new do |s|
 An easy way to use pull-to-refresh for Swift.
                        DESC
 
-  s.homepage         = 'https://github.com/KevinZhouRafael/ZKRefresh'
+  s.homepage         = 'https://github.com/KevinZhouRafael/FigRefresh'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhoukai' => 'wumingapie@gmail.com' }
-  s.source           = { :git => 'https://github.com/KevinZhouRafael/ZKRefresh.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/KevinZhouRafael/FigRefresh.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_version = '5'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZKRefresh/Classes/**/*'
+  s.source_files = 'FigRefresh/Classes/**/*'
   s.resource_bundles = {
-    'ZKRefreshResource' => ['ZKRefresh/Resources/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+    'FigRefreshResource' => ['FigRefresh/Resources/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
 
 end
