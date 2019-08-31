@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios,'8.0'
+use_frameworks!
+
+target ‘ZKRefreshDemo’ do
+    #pod 'KCConfigModule', :path => '../../KCConfigModule'
+    
+    pod ‘ZKRefresh’, :path => '../'
+
+end
