@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZKRefresh.svg?style=flat)](http://cocoapods.org/pods/ZKRefresh)
 
 
-ZKRefresh is a Swift refresh framework。It's api is looks like [MJRefresh](https://github.com/CoderMJLee/MJRefresh).ZKRefresh is simple and extensibility。
+ZKRefresh is a Swift refresh framework. It's api looks like [MJRefresh](https://github.com/CoderMJLee/MJRefresh). ZKRefresh is simple and extensibility.
 
 [**中文版**](README_cn.md)
 
@@ -26,7 +26,7 @@ import ZKRefresh
  })
 
 ```
-look up ZKRefreshDemo project in sources。
+look up ZKRefreshDemo project in sources. 
 
 ## Design
 
@@ -39,11 +39,11 @@ I suggest you custom titleLabel in it's sub classes.
 
 I support 3 types implements:
 
-- 1、Text。
-- 2、Indicator + Text。
-- 3、Images + Text。
+- 1、Text. 
+- 2、Indicator + Text. 
+- 3、Images + Text. 
 
-If these can't satisfy you，Just inherit RefreshHeader and RefreshFooter class。
+If these can't satisfy you，Just inherit RefreshHeader and RefreshFooter class. 
 
 ```Swift
 
@@ -60,7 +60,7 @@ public class MyCustomHeader:RefreshHeader{
         return 50
     }
     
-    //Just excute once. This method used to init UI。
+    //Just excute once. This method used to init UI. 
     public override func refreshComponentDidMoveToSuperview() {
         //must call
         super.refreshComponentDidMoveToSuperview()
@@ -173,9 +173,9 @@ open class RefreshFooter:RefreshFooterControl{
 - 1、Override refreshComponentTitlesWithStates method to custom text.
 - 2、Override refreshComponentDidMoveToSuperview method to custom UI.
 
-### 2、Set Globle Header and Footer。
+### 2、Set Globle Header and Footer. 
 
-Set onec Header and Footer。
+Set onec Header and Footer. 
 
 ```Swift
         
@@ -208,7 +208,7 @@ scrollView.zk_footer { [weak self] in
 
 ```
 
-### 3 、Dynimic modify Header and Footer。
+### 3 、Dynimic modify Header and Footer. 
 
 ```Swift
 
